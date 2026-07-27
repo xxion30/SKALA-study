@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TodoList 실습</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+
+<main class="container">
+
+    <h1>TodoList</h1>
+    <p class="description">
+        오늘 해야 할 일을 입력하고 관리해 봅니다.
+    </p>
+
+    <form id="todoForm" class="todo-form">
+        <input
+            id="todoInput"
+            type="text"
+            placeholder="할 일을 입력하세요"
+            autocomplete="off">
+
+        <button type="submit">추가</button>
+    </form>
+
+    <ul id="todoList" class="todo-list"></ul>
+
+    <!-- 목록이 비었을 때 -->
+    <div id="emptyMessage" class="empty">
+        <div class="icon">🗑️</div>
+        <strong>목록이 비어 있습니다</strong>
+        <p>새로운 할 일을 목록에 추가해보세요.</p>
+    </div>
+
+    <!-- 통계 -->
+    <div id="summary" class="summary">
+        전체 <span id="totalCount">0</span>개 |
+        완료 <span id="doneCount">0</span>개 |
+        남은 일 <span id="leftCount">0</span>개
+    </div>
+
+</main>
+
+</body>
+</html>
