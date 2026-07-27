@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  width: 100px;
+  height: 100px;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  position: relative;
+  /* animation shorthand (apply the animation to the div using shorthand) */
+  animation: slide 2s infinite;
+
+}
+
+/* @keyframes slide { ... } At 0 setback ground-color to red and left to 0px */
+@keyframes slide {
+  0% {
+    background-color: red;
+    left: 0px;
+  }
+
+  100% {
+    background-color: blue;
+    left: 200px;
+  }
+}
+</style>
+</head>
+<body>
+
+<div>Slide!</div>
+
+</body>
+</html>
