@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend> 개인 프로필 정보 </legend>    
+        <p>
+            <label for = "userName"> Name: </label>
+            <input type= "text" id = "userName" name = "userName" required>
+        </p>
+        
+        
+        <p>
+            <label for ="userBirth">Birth Date : </label>
+            <input type = "date" id = "userBirth" name = "userBirth">
+        </p>
+
+
+        <p>
+            sex:
+            <label><input type = "radio" name = "gender" value = "main" checkd> male </label>
+            <label><input type = "radio" name = "gender" value = "female"> female </label>
+            <label><input type = "radio" name = "gender" value = "none" checkd> none </label>
+        </p>
+
+        
+        <p>
+            interest : <br>
+            <label><input type = "checkbox" name = "interest" value = "frontend"> web frontend (Vue.js/HTML) </label><br>
+
+        </p>
+
+        </fieldset>
+    </form>
+</body>
+</html>
