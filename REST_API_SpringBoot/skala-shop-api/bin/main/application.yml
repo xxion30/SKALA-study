@@ -1,0 +1,25 @@
+spring: 
+  application: 
+    name: skala-shop-api 
+  datasource: 
+    url: jdbc:h2:mem:shopdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE 
+    driver-class-name: org.h2.Driver 
+    username: sa 
+    password: 
+  jpa: 
+    hibernate: 
+      ddl-auto: create-drop 
+    open-in-view: false 
+    defer-datasource-initialization: true 
+    properties: 
+      hibernate: 
+        format_sql: true
+server: 
+  port: 8080
+
+jwt:
+    # 실습용 기본 키입니다. 운영 환경에서는 JWT_SECRET 환경 변수로 교체합니다.
+  secret: ${JWT_SECRET:U0tBTEEtU0hPUC1KV1QtU0VDUkVULUtFWS1GT1ItVFJBSU5JTkctMjAyNiEh}
+  expiration-minutes: 60
+
+
