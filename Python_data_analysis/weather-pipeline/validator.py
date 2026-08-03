@@ -1,3 +1,15 @@
+"""
+프로그램명 : 실무형 수집·검증·품질 파이프라인
+과목 : 데이터 분석을 위한 Python 이해
+실습 : 종합 실습 1
+
+작성자 : 양시온
+작성일 : 2026-08-03
+
+파일 설명
+- API 응답에서 필요한 데이터를 추출한다.
+- Pydantic 모델을 이용하여 데이터 유효성을 검증한다.
+"""
 
 from models import CountryModel, IpModel, WeatherModel
 

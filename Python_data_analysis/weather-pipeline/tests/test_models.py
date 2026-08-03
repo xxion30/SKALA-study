@@ -1,3 +1,16 @@
+"""
+프로그램명 : 실무형 수집·검증·품질 파이프라인
+과목 : 데이터 분석을 위한 Python 이해
+실습 : 종합 실습 1
+
+작성자 : 양시온
+작성일 : 2026-08-03
+
+파일 설명
+- Pydantic 모델의 정상 동작을 테스트한다.
+- 잘못된 데이터 입력 시 ValidationError가 발생하는지 확인한다.
+"""
+
 import pytest
 from pydantic import ValidationError
 

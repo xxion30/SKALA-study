@@ -1,3 +1,16 @@
+"""
+프로그램명 : 실무형 수집·검증·품질 파이프라인
+과목 : 데이터 분석을 위한 Python 이해
+실습 : 종합 실습 1
+
+작성자 : 양시온
+작성일 : 2026-08-03
+
+파일 설명
+- Open-Meteo, Countries.dev, ip-api의 데이터를 비동기로 수집한다.
+- asyncio와 httpx를 사용하여 여러 API를 동시에 호출한다.
+"""
+
 import asyncio
 
 import httpx
